@@ -1,0 +1,32 @@
+O arquivo on_reboot.sh serve para executar o código em python do robô no raspberry
+
+Copie o arquivo on_reboot.sh para a raiz do usuário principal de seu Raspberry (provavelmente /home/pi)
+
+Após isto, passe o comando de permissão de execução: 
+
+$ chmod +x on_reboot.sh
+
+Pronto, agora só precisa adicionar o processo no crontab. Utilize o comando:
+
+$ sudo crontab -e
+
+E adicione esta linha no fim do arquivo:
+
+@reboot /home/pi/on_reboot.sh
+
+Se você usou o script passado por mim para instalar o opencv, tudo está ok. Apenas se certifique que o arquivo camera.py está na pasta /home/pi, que você verificou que está funcionando o opencv no python 2 (ou 3) e que você instalou o imutils
+
+Para instalar o imutils, basta digitar:
+
+$ pip install imutils
+
+E para testar a versão do opencv:
+
+$ python
+>>> import cv2
+>>> cv2.__version__
+3.1.0
+
+Se aparecer isto, tudo ok.
+
+Agora, basta resetar o Rasp e esperar ele reiniciar. O processo do sistema de execução pode demorar alguns minutos. Se o arduino receber um valor igual a 'a', é porque o código camera.py está rodando.
