@@ -39,12 +39,14 @@ The webcam used can be any with an USB 2.1 support, connected directly to Raspbe
 
 The Servo Motor is used to move the ultrasonic sensor left to right in order to check if the environment have some obstacles. The code keeps the servo in sleep state. When the ultrasonic sensor notice any obstacle nearby (in front of robot in this case), the servo moves the sensor to left and right in order where the robot can move.
 
-The Motor Shield use a secondary battery (recommended a 1300mAh with 12VDC) to power the 2 DC motors that are used to move the robot, and the servo, that is used to move the ultrsonic sensor.
+The Motor Shield use a secondary battery (recommended a 1300mAh with 12VDC) to power the 2 DC motors that are used to move the robot, and the servo, that is used to move the ultrasonic sensor.
 
-The another connections can be seen in figure below
+Other connections can be seen in figure below:
 
-![
+![mmrc16](https://cloud.githubusercontent.com/assets/6139272/21539899/5f7b9544-cd81-11e6-86c3-f8f8039f8cba.png)
+
+The fritzing is in the important files folder.
 
 # Acknowledgements
 
-Many thanks to Aldemir Teixeira Jr. and Antônio Marcos for helping me with the Arduino optimization. Thanks to Adrian Rosebrock from blog http://www.pyimagesearch.com.
+Many thanks to Aldemir Teixeira Jr. and Antônio Marcos for helping me with the Arduino optimization. Thanks to Adrian Rosebrock from blog http://www.pyimagesearch.com to share the code of tracking ball used here.
