@@ -8,7 +8,7 @@ The project use a simple 2WD robot placed in an Arena that resemble a Martian so
 
 The best robot is the one that finds the green ball (a tennis ball for example) faster without hitting the obstacles. 
 
-The code and hardware described here are the basic setup, available by the teacher to the team use as an example. Need changes to make more optimal for the competition.
+The code and hardware described here are the basic setup, available by the teacher to the teams use as an example. It's necessary to make some changes to optimize the robot for the competition.
 
 # Requirements (Hardware)
 
@@ -31,7 +31,7 @@ And others parts, like the car chassi itself and wheels. We recommend the usage 
 All these libraries are already in this repository. Just download it and install in your computer.
 The Arduino tools and Raspbian OS can be found googling it! Same with the installation methods.
 
-# Connections with Arduino, Shield and Raspberry 
+# Connections with Arduino, Motor Shield and Raspberry 
 
 The Arduino Shield goes directly above the Arduino UNO without any other connection. The Raspberry is connected directly with Arduino by USB port. The Arduino will be recognized by Raspberry as a ttyACMX or ttyUSBX device in /dev folder (check this in Raspberry, the 'X' is a number of the device, starting in 0 to inf - check that too). Note that a Linux OS will be already installed in your Raspberry.
 
